@@ -30,10 +30,10 @@ window.addEventListener("DOMContentLoaded", async (e) => {
           
           <div>
             <button class="btn btn-primary btn-delete" data-id="${doc.id}">
-              🗑 Delete
+              🗑 Eliminar
             </button>
             <button class="btn btn-secondary btn-edit" data-id="${doc.id}">
-              🖉 Edit
+              🖉 Editar
             </button>
           </div>
         </div>`;
