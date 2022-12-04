@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase CRUD</title>
+
+    <!-- BOOTSWATCH -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/yeti/bootstrap.min.css"
+    />
+  </head>
+
+  <body class="bg-dark">
+    <!-- ADD TASK -->
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="h4">Nuevo estudiante</h1>
+
+              <form id="task-form">
+                <label for="title">Codigo:</label>
+                <input
+                  type="text"
+                  id="codigo"
+                  class="form-control mb-3"
+                  class="My First Title"
+                  placeholder="Codigo"
+                  autofocus
+                />
+                <label for="title">Nombre:</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  class="form-control mb-3"
+                  class="My First Title"
+                  placeholder="Nombre"
+                  autofocus
+                />
+                <label for="title">Correo:</label>
+                <input
+                  type="text"
+                  id="correo"
+                  class="form-control mb-3"
+                  class="My First Title"
+                  placeholder="Correo"
+                  autofocus
+                />
+
+                <button class="btn btn-primary" id="btn-task-form">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Tasks List -->
+        <div class="col-md-6" id="tasks-container"></div>
+      </div>
+    </div>
+
+    <!-- CUSTOM CODE -->
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
