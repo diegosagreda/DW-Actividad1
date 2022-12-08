@@ -95,7 +95,7 @@ taskForm.addEventListener("submit", async (e) => {
         nombre: nombre.value,
         correo: correo.value,
         direccion: direccion.value,
-        telefono: direccion.value
+        telefono: telefono.value
       });
 
       editStatus = false;
