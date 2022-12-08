@@ -1,3 +1,13 @@
-# Vanilla Javascript & Firebase Firestore CRUD
+Aplicacion para el registro de usuarios realizada con Html,css,js y para el manejo de bases de datos se utilizo el servicio de Firebase
 
-This project is web application using HTML, CSS, Javascript and Firebase Firestore as a Realtime databaes, using modules and modern Javascript in the browser
+Integrantes:
+
+1. LOPEZ ARIAS ANGIE GABRIELA
+2. MORA CUASQUER ANDRES MAURICIO
+3. LUIS DIEGO AGREDA JAMIOY
+4. TIMANA CELIS OMAR DAVID
+
+Para su visualizacion solo se debe ingresar a la siguiente direccion:
+
+https://bespoke-youtiao-8dfe49.netlify.app/
+
