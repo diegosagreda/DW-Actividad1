@@ -7,7 +7,7 @@ Integrantes:
 3. LUIS DIEGO AGREDA JAMIOY
 4. TIMANA CELIS OMAR DAVID
 
-Para visualizar la pagina y su funcionamiento se puede hacer a traves de la siguiente direccion:
+Para visualizar la pagina y su funcionamiento se puede acceder de la siguiente direccion:
 
 https://bespoke-youtiao-8dfe49.netlify.app/
 
