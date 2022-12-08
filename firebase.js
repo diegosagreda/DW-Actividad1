@@ -36,10 +36,12 @@ export const db = getFirestore();
  * @param {string} codigo the title of the Task
  * @param {string} nombre the description of the Task
  * @param {string} correo the description of the Task
+ * @param {string} direccion the description of the Task
+ * @param {string} telefono the description of the Task
  * 
  */
-export const saveEstudiante = (codigo,nombre,correo) =>
-  addDoc(collection(db, "estudiantes"), {codigo,nombre,correo });
+export const saveEstudiante = (codigo,nombre,correo,direccion,telefono) =>
+  addDoc(collection(db, "estudiantes"), {codigo,nombre,correo,direccion,telefono });
 
 export const onGetEstudiantes = (callback) =>
   onSnapshot(collection(db, "estudiantes"), callback);

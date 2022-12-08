@@ -27,6 +27,8 @@ window.addEventListener("DOMContentLoaded", async (e) => {
           <h3 class="h5">Codigo: ${estudiante.codigo}</h3>
           <p>Nombre: ${estudiante.nombre}</p>
           <p>Correo: ${estudiante.correo}</p>
+          <p>Direccion: ${estudiante.direccion}</p>
+          <p>Telefono: ${estudiante.telefono}</p>
           
           <div>
             <button class="btn btn-primary btn-delete" data-id="${doc.id}">
@@ -59,6 +61,9 @@ window.addEventListener("DOMContentLoaded", async (e) => {
           taskForm["codigo"].value = estudiante.codigo;
           taskForm["nombre"].value = estudiante.nombre;
           taskForm["correo"].value = estudiante.correo;
+          taskForm["direccion"].value = estudiante.direccion;
+          taskForm["telefono"].value = estudiante.telefono;
+          
 
           editStatus = true;
           id = doc.id;
@@ -77,15 +82,20 @@ taskForm.addEventListener("submit", async (e) => {
   const codigo = taskForm["codigo"];
   const nombre = taskForm["nombre"];
   const correo = taskForm["correo"];
+  const direccion = taskForm["direccion"];
+  const telefono = taskForm["telefono"];
+  
 
   try {
     if (!editStatus) {
-      await saveEstudiante(codigo.value, nombre.value,correo.value);
+      await saveEstudiante(codigo.value, nombre.value,correo.value,direccion.value,telefono.value);
     } else {
       await updateEstudiante(id, {
         codigo:codigo.value,
         nombre: nombre.value,
-        correo: correo.value
+        correo: correo.value,
+        direccion: direccion.value,
+        telefono: direccion.value
       });
 
       editStatus = false;
@@ -94,7 +104,6 @@ taskForm.addEventListener("submit", async (e) => {
     }
 
     taskForm.reset();
-    title.focus();
   } catch (error) {
     console.log(error);
   }
